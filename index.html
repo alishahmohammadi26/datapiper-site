@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DATAPiper — Clinical Data Automation for Pharma & Biotech</title>
+  <meta name="description" content="DATAPiper automates clinical trial data intake, ontology mapping, and CRO coordination — so your science teams can focus on science." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────────────────────────────────── -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="7" fill="#2563eb"/>
+          <path d="M9 10h6a5 5 0 0 1 0 10H9V10Z" fill="white" opacity=".9"/>
+          <rect x="18" y="16" width="5" height="6" rx="1.5" fill="white" opacity=".7"/>
+        </svg>
+        <span>DATAPiper</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#who">Who It's For</a>
+        <a href="#how">How It Works</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Request Demo</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-badge">Clinical Data Infrastructure</div>
+      <h1>From raw CRO data<br/>to clean, mapped records —<br/><span class="gradient-text">automatically.</span></h1>
+      <p class="hero-sub">DATAPiper connects pharma sponsors with CRO labs, automates ontology mapping, and enforces data quality — all in one secure platform.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary btn-lg">Request a Demo</a>
+        <a href="#how" class="btn btn-ghost btn-lg">See How It Works →</a>
+      </div>
+      <div class="hero-trust">
+        <span>Built for</span>
+        <span class="trust-pill">GxP compliance</span>
+        <span class="trust-pill">CDISC / LOINC</span>
+        <span class="trust-pill">Multi-tenant SaaS</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="dashboard-mock">
+        <div class="mock-topbar">
+          <div class="mock-dot red"></div>
+          <div class="mock-dot yellow"></div>
+          <div class="mock-dot green"></div>
+          <span class="mock-title">DATAPiper — Dashboard</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-sidebar">
+            <div class="mock-nav-item active"></div>
+            <div class="mock-nav-item"></div>
+            <div class="mock-nav-item"></div>
+            <div class="mock-nav-item"></div>
+            <div class="mock-nav-item"></div>
+          </div>
+          <div class="mock-content">
+            <div class="mock-stat-row">
+              <div class="mock-stat blue"></div>
+              <div class="mock-stat green"></div>
+              <div class="mock-stat purple"></div>
+              <div class="mock-stat orange"></div>
+            </div>
+            <div class="mock-table">
+              <div class="mock-row header"></div>
+              <div class="mock-row"></div>
+              <div class="mock-row"></div>
+              <div class="mock-row"></div>
+              <div class="mock-row light"></div>
+              <div class="mock-row"></div>
+            </div>
+            <div class="mock-chart">
+              <div class="mock-bar" style="height:55%"></div>
+              <div class="mock-bar" style="height:75%"></div>
+              <div class="mock-bar" style="height:45%"></div>
+              <div class="mock-bar" style="height:90%"></div>
+              <div class="mock-bar" style="height:65%"></div>
+              <div class="mock-bar" style="height:80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LOGOS / TRUST ────────────────────────────────────────────────── -->
+  <section class="trust-strip">
+    <div class="container">
+      <p class="trust-label">Designed for teams in</p>
+      <div class="trust-logos">
+        <span>Pharmaceutical R&amp;D</span>
+        <span>Biotech Startups</span>
+        <span>Contract Research Organizations</span>
+        <span>Clinical Operations</span>
+        <span>Regulatory Affairs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ─────────────────────────────────────────────────────── -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2>Everything your data pipeline needs</h2>
+      <p class="section-sub">One platform to request, receive, map, and audit clinical data across all your CRO partners.</p>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Automated Ontology Mapping</h3>
+          <p>4-tier intelligent mapping engine resolves 70%+ of terms automatically against CDISC, LOINC, and custom vocabularies. Ambiguous terms route to the right reviewer.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>CRO Request Management</h3>
+          <p>Submit structured data requests to any CRO lab, track SLA deadlines, and receive data in standardized formats — all from one worklist.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Smart Template Engine</h3>
+          <p>AI-assisted template generation for assay data collection. Templates enforce schema, required fields, and units — catching errors before data leaves the lab.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Spreadsheet Analytics</h3>
+          <p>Open any dataset in the built-in spreadsheet viewer with column mapping, formula support, filter/sort, and saved view states — no Excel required.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>File Vault with AI Summaries</h3>
+          <p>Secure hierarchical file storage with AI-generated summaries and tagging. Every file is versioned, GxP-flaggable, and searchable by content.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>GxP-Ready Audit Trail</h3>
+          <p>Every action — data submission, mapping decision, approval — is logged with user, timestamp, and change context. Ready for 21 CFR Part 11 audits.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHO IT'S FOR ──────────────────────────────────────────────────── -->
+  <section id="who" class="who">
+    <div class="container">
+      <div class="section-label">Who It's For</div>
+      <h2>Built for every stakeholder in clinical data</h2>
+      <div class="personas-grid">
+
+        <div class="persona-card">
+          <div class="persona-icon">🔬</div>
+          <h3>Pharma Sponsors</h3>
+          <p>Submit requests, monitor SLAs, review incoming data, and enforce ontology standards across all CRO partners from a single dashboard.</p>
+          <ul>
+            <li>SLA tracking & alerts</li>
+            <li>Multi-CRO coordination</li>
+            <li>Automated data validation</li>
+          </ul>
+        </div>
+
+        <div class="persona-card featured">
+          <div class="persona-icon">🏢</div>
+          <h3>CRO Laboratories</h3>
+          <p>Receive structured requests, submit data using sponsor-defined templates, and communicate directly within the platform — no more email chains.</p>
+          <ul>
+            <li>Guided data submission</li>
+            <li>Template-enforced formats</li>
+            <li>Direct sponsor messaging</li>
+          </ul>
+        </div>
+
+        <div class="persona-card">
+          <div class="persona-icon">🧬</div>
+          <h3>Ontologists & Data Stewards</h3>
+          <p>Curate unmapped terms, manage vocabulary, review AI mapping suggestions, and build institutional ontology libraries over time.</p>
+          <ul>
+            <li>4-tier review queue</li>
+            <li>CDISC / LOINC integration</li>
+            <li>Custom vocabulary builder</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ──────────────────────────────────────────────────── -->
+  <section id="how" class="how">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2>From request to clean data in four steps</h2>
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Sponsor submits a data request</h3>
+            <p>Define the assay, required fields, template, and deadline. The CRO receives a structured notification instantly.</p>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>CRO uploads data using the template</h3>
+            <p>Files land in the secure vault. Schema validation runs immediately — formatting errors are caught before the sponsor sees the data.</p>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Ontology mapping runs automatically</h3>
+            <p>The 4-tier engine resolves most terms against standard vocabularies. Ambiguous terms route to the right human reviewer without blocking the pipeline.</p>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Sponsor receives audit-ready, mapped data</h3>
+            <p>Every field is standardized, every decision logged. Export to downstream systems or open in the built-in spreadsheet viewer.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCREENSHOTS / PREVIEW ─────────────────────────────────────────── -->
+  <section class="preview">
+    <div class="container">
+      <div class="section-label">Platform</div>
+      <h2>A platform your team will actually use</h2>
+      <p class="section-sub">Clean, modern interface — no training required.</p>
+      <div class="preview-cards">
+        <div class="preview-card">
+          <div class="preview-mock worklist-mock">
+            <div class="pm-header">
+              <span class="pm-title">Admin Worklist</span>
+              <span class="pm-badge blue">12 open</span>
+            </div>
+            <div class="pm-row"><span class="pm-dot green"></span><span class="pm-text">PK Study — BioTest Lab</span><span class="pm-status">In Review</span></div>
+            <div class="pm-row"><span class="pm-dot orange"></span><span class="pm-text">ADME Panel — Covance</span><span class="pm-status urgent">Due today</span></div>
+            <div class="pm-row"><span class="pm-dot blue"></span><span class="pm-text">Metabolite ID — SGS</span><span class="pm-status">Submitted</span></div>
+            <div class="pm-row"><span class="pm-dot gray"></span><span class="pm-text">Biomarker Panel — IQVIA</span><span class="pm-status">Pending</span></div>
+          </div>
+          <p>Request Worklist</p>
+        </div>
+        <div class="preview-card">
+          <div class="preview-mock mapping-mock">
+            <div class="pm-header">
+              <span class="pm-title">Ontology Mapping</span>
+              <span class="pm-badge purple">Auto-mapped 94%</span>
+            </div>
+            <div class="pm-mapping-row">
+              <span class="pm-term">Cmax</span>
+              <span class="pm-arrow">→</span>
+              <span class="pm-mapped green">CDISC: C85598</span>
+            </div>
+            <div class="pm-mapping-row">
+              <span class="pm-term">AUC0-inf</span>
+              <span class="pm-arrow">→</span>
+              <span class="pm-mapped green">CDISC: C85539</span>
+            </div>
+            <div class="pm-mapping-row">
+              <span class="pm-term">t½ alpha</span>
+              <span class="pm-arrow">→</span>
+              <span class="pm-mapped orange">Review needed</span>
+            </div>
+            <div class="pm-mapping-row">
+              <span class="pm-term">Vd/F</span>
+              <span class="pm-arrow">→</span>
+              <span class="pm-mapped green">CDISC: C85609</span>
+            </div>
+          </div>
+          <p>Ontology Mapping Engine</p>
+        </div>
+        <div class="preview-card">
+          <div class="preview-mock vault-mock">
+            <div class="pm-header">
+              <span class="pm-title">File Vault</span>
+              <span class="pm-badge green">GxP locked</span>
+            </div>
+            <div class="pm-folder"><span class="pm-folder-icon">📁</span><span class="pm-text">PK_Study_2025</span></div>
+            <div class="pm-folder indent"><span class="pm-folder-icon">📄</span><span class="pm-text">raw_data.csv</span><span class="pm-ai">AI ✓</span></div>
+            <div class="pm-folder indent"><span class="pm-folder-icon">📄</span><span class="pm-text">mapped_output.xlsx</span><span class="pm-ai">AI ✓</span></div>
+            <div class="pm-folder"><span class="pm-folder-icon">📁</span><span class="pm-text">ADME_Panel</span></div>
+            <div class="pm-folder indent"><span class="pm-folder-icon">📄</span><span class="pm-text">report_v2.pdf</span><span class="pm-ai">AI ✓</span></div>
+          </div>
+          <p>Secure File Vault</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT / CTA ─────────────────────────────────────────────────── -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <div class="contact-text">
+        <div class="section-label light">Get Early Access</div>
+        <h2>Ready to modernize your clinical data workflow?</h2>
+        <p>DATAPiper is currently in private beta. Request a demo and we'll show you how it fits your team's workflow.</p>
+        <ul class="contact-perks">
+          <li>✓ Personalized demo with your data types</li>
+          <li>✓ No commitment required</li>
+          <li>✓ Implementation support included</li>
+        </ul>
+      </div>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Dr. Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@yourcompany.com" required />
+        </div>
+        <div class="form-group">
+          <label for="org">Organization</label>
+          <input type="text" id="org" name="org" placeholder="Pfizer, Covance, etc." />
+        </div>
+        <div class="form-group">
+          <label for="role">Your Role</label>
+          <select id="role" name="role">
+            <option value="">Select your role</option>
+            <option>Pharma Sponsor / R&D</option>
+            <option>CRO / Lab Manager</option>
+            <option>Clinical Data Manager</option>
+            <option>Ontologist / Data Steward</option>
+            <option>IT / Informatics</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything specific you'd like to see?</label>
+          <textarea id="message" name="message" rows="3" placeholder="e.g. PK data intake from multiple CROs…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Request Demo →</button>
+        <p class="form-note">We'll get back to you within 2 business days.</p>
+      </form>
+    </div>
+    <div id="form-success" class="form-success hidden">
+      <div class="success-icon">✓</div>
+      <h3>Request received!</h3>
+      <p>We'll be in touch within 2 business days.</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo">
+        <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="7" fill="#2563eb"/>
+          <path d="M9 10h6a5 5 0 0 1 0 10H9V10Z" fill="white" opacity=".9"/>
+          <rect x="18" y="16" width="5" height="6" rx="1.5" fill="white" opacity=".7"/>
+        </svg>
+        <span>DATAPiper</span>
+      </a>
+      <p class="footer-tagline">Clinical data automation for pharma &amp; biotech.</p>
+      <p class="footer-copy">© 2026 DATAPiper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
